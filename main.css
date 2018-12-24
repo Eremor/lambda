@@ -1,1 +1,71 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+@import url('https://fonts.googleapis.com/css?family=Gentium+Book+Basic:400,400i,700,700i|Open+Sans:400,400i,700,700i|Yeseva+One');
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: 'Yeseva One', serif;
+  font-family: 'Open Sans', sans-serif;
+  word-wrap: break-word;
+  color: #1d1d1d;
+}
+
+a{
+  text-decoration: none;
+}
+
+a:hover{
+  text-decoration: none;
+}
+
+li{
+  list-style: none;
+}
+
+/*Header*/
+header{
+  background-image: url(./img/header_bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+nav{
+  /*liner-gradient*/
+  background: linear-gradient(top, rgba(0,0,0,1), rgba(0,0,0,0));
+  background: -webkit-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+  background: -o-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+  background: -moz-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+  /**/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo{
+  padding: 10px 0;
+  margin-right: 120px;
+}
+
+.navbar{
+  display: flex;
+  font-size: 1.5em;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Gentium Book Basic', serif;
+}
+
+.navbar__item{
+  color: #f3f1f0;
+  margin: 0 20px;
+}
+
+.navbar__item:hover{
+  
+}
+
+.mobile{
+  display: none;
+}

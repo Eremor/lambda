@@ -142,12 +142,12 @@ nav{
 
 .btn_primary{
   margin: 0 20px;
-  border: 1px solid #fff;
-  background-color: rgba(255,255,255,0.5);
+  border: 1px solid #000;
+  background-color: rgba(0,0,0,0.5);
   text-transform: uppercase;
 }
 
 .btn_primary:hover{
-  border: 1px solid #000;
-  background-color: rgba(0,0,0,0.5);
+  border: 1px solid #fff;
+  background-color: rgba(255,255,255,0.5);
 }

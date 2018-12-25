@@ -17,6 +17,15 @@ h3{
   font-family: 'Yeseva One', serif;
 }
 
+h2{
+  font-size: 2.5em;
+  font-weight: 400;
+}
+
+.title_color{
+  color: #c9a131;
+}
+
 a{
   text-decoration: none;
 }
@@ -52,6 +61,11 @@ li{
 
 .btn:focus{
   outline-style: none;
+}
+
+.divider,
+.divider_color{
+  margin: 15px 0;
 }
 
 /*Header*/
@@ -150,4 +164,37 @@ nav{
 .btn_primary:hover{
   border: 1px solid #fff;
   background-color: rgba(255,255,255,0.5);
+}
+
+/*About*/
+#about-s{
+  background-image: url(./img/about_bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.about{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+}
+
+.about-desc{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 40%;
+}
+
+.about__text{
+  color: #1f1f1f;
+}
+
+.about__img{
+  margin-top: 40px;
+  padding-left: 80px;
 }

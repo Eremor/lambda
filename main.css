@@ -6,10 +6,15 @@
 }
 
 body{
-  font-family: 'Yeseva One', serif;
   font-family: 'Open Sans', sans-serif;
   word-wrap: break-word;
   color: #1d1d1d;
+}
+
+h1,
+h2,
+h3{
+  font-family: 'Yeseva One', serif;
 }
 
 a{
@@ -22,6 +27,31 @@ a:hover{
 
 li{
   list-style: none;
+}
+
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.btn{
+  padding: 15px 50px;
+  font-size: 0.75em;
+  font-weight: 700;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  user-select: none;
+  background-repeat: repeat-x;
+  background-position: -1px -1px;
+  text-transform: none;
+  overflow: visible;
+  font: inherit;
+  color: #ffffff;
+}
+
+.btn:focus{
+  outline-style: none;
 }
 
 /*Header*/
@@ -59,13 +89,65 @@ nav{
 
 .navbar__item{
   color: #f3f1f0;
-  margin: 0 20px;
+  margin: 0 10px;
+  padding: 0 10px;
 }
 
 .navbar__item:hover{
-  
+  border-top: 4px solid #f3f1f0;
+  padding-top: 47px;
 }
 
 .mobile{
   display: none;
+}
+
+.header-icons{
+  display: flex;
+  font-size: 1.5em;
+  justify-content: center;
+  align-items: center;
+  margin: 0 20px;
+}
+
+.icon-item{
+  color: #c9a131;
+  padding: 0 10px;
+}
+
+.home{
+  padding: 100px 0;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.home__title{
+  margin-top: 50px;
+  font-size: 5.5em;
+  font-weight: 400;
+  color: #f3f1f0;
+  width: 85%;
+}
+
+.home__img{
+  margin: 50px 0;
+}
+
+.home-btn{
+  padding-bottom: 100px;
+}
+
+.btn_primary{
+  margin: 0 20px;
+  border: 1px solid #fff;
+  background-color: rgba(255,255,255,0.5);
+  text-transform: uppercase;
+}
+
+.btn_primary:hover{
+  border: 1px solid #000;
+  background-color: rgba(0,0,0,0.5);
 }

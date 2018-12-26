@@ -198,3 +198,46 @@ nav{
   margin-top: 40px;
   padding-left: 80px;
 }
+
+/*Ingredients*/
+#ingredients-s{
+  background-image: url(./img/ingredients_bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.ingredients{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.ing-card{
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0,0,0,0.6);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 50%;
+  margin: 100px 0 100px 40%;
+}
+
+.ing__title{
+  margin-top: 80px;
+  color: #fff;
+}
+
+.ing__text{
+  color: #fff;
+  margin: 20px 10% 0 10%;
+}
+
+.ing-imgs{
+  margin: 50px auto;
+  margin-bottom: 80px;
+}
+
+.ing-imgs__img{
+  padding: 0 15px;
+}

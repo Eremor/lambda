@@ -20,16 +20,18 @@
           <li><a class="navbar__item" href="#reviews-s">Reviews</a></li>
           <li><a class="navbar__item" href="#reserv-s">Reservations</a></li>
         </ul>
-        <ul class="navbar mobile">
-          <label for="toggle">&#9776;</label>
+        <div class="navbar mobile">
+          <label class="mobile-label" for="toggle">&#9776;</label>
           <input type="checkbox" id="toggle"/>
-          <li><a class="navbar__item" href="#home-s">Home</a></li>
-          <li><a class="navbar__item" href="#about-s">About</a></li>
-          <li><a class="navbar__item" href="#ingredients-s">Igredients</a></li>
-          <li><a class="navbar__item" href="#menu-s">Menu</a></li>
-          <li><a class="navbar__item" href="#reviews-s">Reviews</a></li>
-          <li><a class="navbar__item" href="#reserv-s">Reservations</a></li>
-        </ul>
+          <ul class="mobile-menu">
+            <li><a class="navbar__item" href="#home-s">Home</a></li>
+            <li><a class="navbar__item" href="#about-s">About</a></li>
+            <li><a class="navbar__item" href="#ingredients-s">Igredients</a></li>
+            <li><a class="navbar__item" href="#menu-s">Menu</a></li>
+            <li><a class="navbar__item" href="#reviews-s">Reviews</a></li>
+            <li><a class="navbar__item" href="#reserv-s">Reservations</a></li>
+          </ul>
+        </div>
         <ul class="header-icons">
           <li><a class="icon-item" href="https://twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a></li>
           <li><a class="icon-item" href="https://youtube.com/" target="_blank"><i class="fa fa-youtube"></i></a></li>
@@ -194,12 +196,12 @@
       <section id="reviews-s">
         <div class="container">
           <div class="review">
-            <h2>Guest Reviews</h2>
+            <h2 class="review__title">Guest Reviews</h2>
             <img class="divider" src="./img/divider2.png">
-            <p class="review__text">&#10077;If you've been to one of our restaurants, you've seen - and tasted - what keeps ourcustomers coming back for more.<br>
+            <p class="review__text">If you've been to one of our restaurants, you've seen - and tasted - what keeps ourcustomers coming back for more.<br>
             Perfect materials and freshly baked food, delicious Lambda cakes, muffins, and gourmet coffees make us hard to resist!<br>
             Stop in today and check us out!</p>
-            <p class="review__author">-food inc, New York</p>
+            <p class="review__author">- food inc, New York</p>
           </div>
         </div>
       </section>
@@ -213,27 +215,27 @@
             <div class="reserv-desc">
               <h2 class="title_color">Just the right food</h2>
               <img class="divider_color" src="./img/divider_color.png">
-              <p class="reserv-text">If you've been to one of our restaurants, you've seen - and tasted - what keeps ourcustomers coming back for more.
+              <p class="reserv-desc__text">If you've been to one of our restaurants, you've seen - and tasted - what keeps ourcustomers coming back for more.
               Perfect materials and freshly baked food.</p>
-              <p class="reserv-text">delicious Lambda cakes, muffins, and gourmet coffees make us hard to resist!
+              <p class="reserv-desc__text">Delicious Lambda cakes, muffins, and gourmet coffees make us hard to resist!
               Stop in today and check us out! Perfect materials and freshly baked food.</p>
               <form class="reserv-form">
-                <div class="form-item">
-                  <label for="u-name">Name</label>
+                <div class="reserv-form__item">
+                  <label class="reserv-label" for="u-name">Name</label>
                   <input id="u-name" class="reserv-input" type="text" placeholder="your name *" required>
                 </div>
-                <div class="form-item">
-                  <label for="u-email">Name</label>
+                <div class="reserv-form__item">
+                  <label class="reserv-label" for="u-email">Name</label>
                   <input id="u-email" class="reserv-input" type="email" placeholder="your email *" required>
                 </div>
-                <div class="form-item">
-                  <label for="u-date">Date</label>
-                  <input id="u-date" class="reserv-input" type="date" placeholder="date *" required>
+                <div class="reserv-form__item">
+                  <label class="reserv-label" for="u-date">Date</label>
+                  <input id="u-date" class="reserv-input" type="date" required>
                 </div>
-                <div class="form-item">
-                  <label for="u-num">Party number</label>
-                  <select class="reserv-input">
-                    <option disabled value>party number</option>
+                <div class="reserv-form__item">
+                  <label class="reserv-label" for="u-num">Party number</label>
+                  <select class="reserv-input reserv-select">
+                    <option value="0">party number</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -250,35 +252,37 @@
     </main>
     <footer>
       <div class="container">
-        <div class="footer-desc">
-          <h3 class="footer__title">About US</h3>
-          <img class="divider" src="./img/divider2.png">
-          <p class="footer__text">Lambda's new and expanded Chelsea location represents a truly authentic <strong>Greek</strong> patisserie,
-          featuring breakfasts of fresh croissants and steaming bowls of café<br>
-          Lambda the best restaurant in town</p>
-        </div>
-        <div class="footer-desc">
-          <h3 class="footer__title">Openning Hours</h3>
-          <img class="divider" src="./img/divider2.png">
-          <p class="footer__text"><strong>Mon-Thu:</strong> 7:00am-8:00pm</p>
-          <p class="footer__text"><strong>Fri-Sun:</strong> 7:00am-10:00pm</p>
-          <div class="footer-icons">
-            <span class="footer-icon"><i class="fa fa-cc-amex"></i></span>
-            <span class="footer-icon"><i class="fa fa-cc-paypal"></i></span>
-            <span class="footer-icon"><i class="fa fa-cc-visa"></i></span>
-            <span class="footer-icon"><i class="fa fa-cc-discover"></i></span>
+        <div class="footer-info">
+          <div class="footer-desc">
+            <h3 class="footer__title">About US</h3>
+            <img class="divider" src="./img/divider2.png">
+            <p class="footer__text">Lambda's new and expanded Chelsea location represents a truly authentic <strong>Greek</strong> patisserie,
+            featuring breakfasts of fresh croissants and steaming bowls of café<br>
+            Lambda the best restaurant in town</p>
           </div>
-        </div>
-        <div class="footer-desc">
-          <h3 class="footer__title">Our Location</h3>
-          <img class="divider" src="./img/divider2.png">
-          <p class="footer__text"><b>19th Paradise Street Sitia</b></p>
-          <p class="footer__text"><b>128 Meserole Avenue</b></p>
-          <div class="footer-icons">
-            <a class="footer-icon"><i class="fa fa-facebook"></i></a>
-            <a class="footer-icon"><i class="fa fa-youtube"></i></a>
-            <a class="footer-icon"><i class="fa fa-twitter"></i></a>
-            <a class="footer-icon"><i class="fa fa-trello"></i></a>
+          <div class="footer-desc">
+            <h3 class="footer__title">Openning Hours</h3>
+            <img class="divider" src="./img/divider2.png">
+            <p class="footer__text"><strong>Mon-Thu:</strong> 7:00am-8:00pm</p>
+            <p class="footer__text"><strong>Fri-Sun:</strong> 7:00am-10:00pm</p>
+            <div class="footer-icons">
+              <span class="footer-icon"><i class="fa fa-cc-amex"></i></span>
+              <span class="footer-icon"><i class="fa fa-cc-paypal"></i></span>
+              <span class="footer-icon"><i class="fa fa-cc-visa"></i></span>
+              <span class="footer-icon"><i class="fa fa-cc-discover"></i></span>
+            </div>
+          </div>
+          <div class="footer-desc">
+            <h3 class="footer__title">Our Location</h3>
+            <img class="divider" src="./img/divider2.png">
+            <p class="footer__text"><b>19th Paradise Street Sitia</b></p>
+            <p class="footer__text"><b>128 Meserole Avenue</b></p>
+            <div class="footer-icons">
+              <a class="footer-icon" href="http://facebook.com" target="_blank"><i class="fa fa-facebook"></i></a>
+              <a class="footer-icon" href="http://youtube.com" target="_blank"><i class="fa fa-youtube"></i></a>
+              <a class="footer-icon" href="http://twitter.com" target="_blank"><i class="fa fa-twitter"></i></a>
+              <a class="footer-icon" href="http://trello.com" target="_blank"><i class="fa fa-trello"></i></a>
+            </div>
           </div>
         </div>
       </div>

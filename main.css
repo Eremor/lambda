@@ -523,6 +523,11 @@ footer{
     width: 60%;
   }
 
+  .review__text::before{
+    top: -50px;
+    left: 5px;
+  }
+
   .reserv{
     flex-direction: column;
     align-items: center;
@@ -545,6 +550,11 @@ footer{
 
   .header-icons{
     font-size: 1.2em;
+  }
+
+  .review__text::before{
+    top: -50px;
+    left: 15px;
   }
 }
 
@@ -623,6 +633,11 @@ footer{
     height: 100%;
   }
 
+  .review__text::before{
+    top: -50px;
+    left: 25px;
+  }
+
   .footer-info{
     flex-direction: column;
     align-items: center;
@@ -656,6 +671,11 @@ footer{
 
   .reserv-img{
     margin: 0 5px;
+  }
+
+  .review__text::before{
+    top: -40px;
+    left: 30px;
   }
 
   .footer-desc{

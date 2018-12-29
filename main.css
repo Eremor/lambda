@@ -28,6 +28,7 @@ h2{
 
 a{
   text-decoration: none;
+  color: #f3f1f0;
 }
 
 a:hover{
@@ -559,20 +560,27 @@ footer{
   .mobile{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
   }
 
   .mobile-menu{
     display: none;
-    text-align: center;
     justify-content: center;
     align-items: center;
-    width: 100%;
     position: absolute;
+    width: 100%;
     top: 100px;
     left: 0;
     background-color: rgba(0,0,0,0.1);
+  }
+
+  .mobile-menu li{
+    width: 100%;
+    text-align: center;
+  }
+
+  .mobile-menu li:hover{
+    width: 100%;
+    background-color: rgba(0,0,0,0.3);
   }
 
   .mobile-label{
@@ -585,10 +593,8 @@ footer{
   }
 
   .navbar__item:hover{
-    border: none;
-    width: 100%;
-    margin: 5px 0;
-    background-color: rgba(0,0,0,0.1);
+    border-top: none;
+    padding-top: 0;
   }
 
   #toggle{
@@ -603,5 +609,133 @@ footer{
   nav{
     justify-content: space-around;
     position: relative;
+  }
+
+  .ingredients{
+    justify-content: center;
+  }
+
+  .ing-card{
+    margin-left: 0;
+  }
+
+  .menu{
+    height: 100%;
+  }
+
+  .footer-info{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-desc{
+    margin-bottom: 40px;
+  }
+}
+
+@media only screen and (max-width: 875px){
+  .container{
+    max-width: 600px;
+  }
+
+  .home__title{
+    font-size: 3.5em;
+  }
+
+  .dish_img{
+    max-width: 100%;
+  }
+
+  .ing-card{
+    width: 100%;
+  }
+
+  .review{
+    margin: 0;
+  }
+
+  .reserv-img{
+    margin: 0 5px;
+  }
+
+  .footer-desc{
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  .container{
+    max-width: 400px;
+  }
+
+  nav{
+    justify-content: center;
+  }
+
+  .header-icons{
+    margin-right: 50px;
+  }
+
+  .home__title{
+    font-size: 2.5em;
+  }
+
+  .home-btn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .btn_primary{
+    margin: 10px 0;
+  }
+
+  .about-desc{
+    width: 100%;
+  }
+
+  .ing-imgs{
+    margin: 0;
+  }
+
+  .ing-imgs__img{
+    padding: 15px 0;
+    max-width: 30%;
+  }
+
+  .special::before{
+    right: -43%;
+  }
+
+  .review__text{
+    font-size: 1em;
+    line-height: normal;
+  }
+
+  .review__text::before{
+    top: -25px;
+    left: 40px;
+  }
+
+  .reserv-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .reserv-imgs{
+    flex-direction: column;
+  }
+
+  .reserv-img{
+    margin: 10px 0;
+  }
+}
+
+@media only screen and (max-width: 500px){
+  .mobile-label{
+    right: 20px;
   }
 }

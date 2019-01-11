@@ -579,7 +579,7 @@ footer{
     align-items: center;
     position: absolute;
     width: 100%;
-    top: 100px;
+    top: 120px;
     left: 0;
     background-color: rgba(0,0,0,0.1);
   }
@@ -762,6 +762,22 @@ footer{
 }
 
 @media only screen and (max-width: 415px){
+  nav{
+    flex-direction: column;
+  }
+
+  .header-icons{
+    margin: 0;
+  }
+
+  .icon-item{
+    color: #fff;
+  }
+
+  .mobile-menu{
+    top: 160px;
+  }
+
   .special::before{
     right: -40.5%;
   }

@@ -9,7 +9,7 @@ body{
   font-family: 'Open Sans', sans-serif;
   word-wrap: break-word;
   color: #1d1d1d;
-  overflow-x: fidden;
+  overflow-x: hidden;
 }
 
 h1,
@@ -25,6 +25,7 @@ h2{
 
 .title_color{
   color: #c9a131;
+  text-align: center;
 }
 
 a{
@@ -193,6 +194,7 @@ nav{
 
 .about__text{
   color: #1f1f1f;
+  width: 100%;
 }
 
 .about__img{
@@ -232,6 +234,7 @@ nav{
 .ing__text{
   color: #fff;
   margin: 20px 10% 0 10%;
+  width: 100%;
 }
 
 .ing-imgs{
@@ -378,6 +381,7 @@ nav{
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  width: 100%;
 }
 
 .reserv-desc__text{

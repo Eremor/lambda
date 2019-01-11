@@ -9,6 +9,7 @@ body{
   font-family: 'Open Sans', sans-serif;
   word-wrap: break-word;
   color: #1d1d1d;
+  overflow-x: fidden;
 }
 
 h1,
@@ -71,7 +72,7 @@ li{
 
 /*Header*/
 header{
-  background-image: url(./img/header_bg.png);
+  background-image: url(./img/header_bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -168,7 +169,7 @@ nav{
 
 /*About*/
 #about-s{
-  background-image: url(./img/about_bg.png);
+  background-image: url(./img/about_bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -201,7 +202,7 @@ nav{
 
 /*Ingredients*/
 #ingredients-s{
-  background-image: url(./img/ingredients_bg.png);
+  background-image: url(./img/ingredients_bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -244,7 +245,7 @@ nav{
 
 /*Menu*/
 #menu-s{
-  background-image: url(./img/menu_bg.png);
+  background-image: url(./img/menu_bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -304,7 +305,7 @@ nav{
 
 /*Review*/
 #reviews-s{
-  background-image: url(./img/reviews_bg.png);
+  background-image: url(./img/reviews_bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -350,7 +351,7 @@ nav{
 
 /*Reservations*/
 #reserv-s{
-  background-image: url(./img/about_bg.png);
+  background-image: url(./img/about_bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -757,5 +758,11 @@ footer{
 @media only screen and (max-width: 500px){
   .mobile-label{
     right: 20px;
+  }
+}
+
+@media only screen and (max-width: 415px){
+  .special::before{
+    right: -40.5%;
   }
 }
